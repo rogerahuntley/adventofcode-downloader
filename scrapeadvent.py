@@ -23,7 +23,7 @@ def download_day(year, day):
 
 
 def save_day(year, day, html):
-    filename = f'solutions/{year}/{day}/description.html'
+    filename = f'descriptions/{year}/{day}/description.html'
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, "w") as f:
         f.write(html)
